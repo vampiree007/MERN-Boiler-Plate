@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 const morgan = require('morgan')
 
 // Dotenv adds properties from congig.env to process.env
-dotenv.config({ path: './config.env' });
+dotenv.config({ path: './server/config.env'});
 
 process.on('uncaughtException', err => {
     console.log('UNCAUGHT EXCEPTION! 💥 Shutting down...');

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=development nodemon index.js",
-    "prod": "cross-env NODE_ENV=production nodemon index.js"
+    "start": "cross-env NODE_ENV=development nodemon server/index.js",
+    "prod": "cross-env NODE_ENV=production nodemon server/index.js"
   },
   "author": "vikrant",
   "license": "ISC",
@@ -28,17 +28,7 @@
     "xss-clean": "^0.1.1"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb": "^17.1.1",
-    "eslint-config-prettier": "^4.3.0",
-    "eslint-plugin-import": "^2.21.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-prettier": "^3.1.3",
-    "eslint-plugin-react": "^7.20.0",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.4",
-    "parcel-bundler": "^1.12.3",
-    "prettier": "^1.19.1"
+    "nodemon": "^2.0.4"
   }
 }
