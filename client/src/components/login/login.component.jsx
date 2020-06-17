@@ -30,13 +30,13 @@ function Copyright() {
 
 const useStyles = (theme) => ({
   paper: {
-    marginTop: theme.spacing(8),
+    marginTop: 0,
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
   },
   avatar: {
-    margin: theme.spacing(1),
+    marginTop: theme.spacing(5),
     backgroundColor: theme.palette.secondary.main,
   },
   form: {
@@ -156,7 +156,7 @@ class SignIn extends React.Component {
                   </Link>
                 </Grid>
                 <Grid item>
-                  <Link href="/sign-up" variant="body2">
+                  <Link href="/register" variant="body2">
                     {"Don't have an account? Sign Up"}
                   </Link>
                 </Grid>
@@ -171,9 +171,9 @@ class SignIn extends React.Component {
   }
 }
 const mapStateToProps = (state) => {
-    return{
+    return({
         user: state.user
-    }
+    })
 }
 
 export default connect(mapStateToProps)(withStyles(useStyles)(SignIn))
